@@ -8,5 +8,4 @@ cmds = ["go mod tidy","cd client && npm install"]
 cmds = [ "go build -o out main.go"]
 
 [start]
-cmds = ["go run main.go --server=http && go run main.go --server=websocket && 
-       cd client && npm start && ./out"]
+cmds = ["go run main.go --server=http && go run main.go --server=websocket && cd client && npm start && ./out"]
