@@ -2,7 +2,7 @@
 nixPkgs = ["go", "nodejs"]
 
 [phases.install]
-cmds = ["go mod tidy","npm install"]
+cmds = ["go mod tidy","cd client && npm install"]
 
 [phases.build]
 cmds = [ "go build -o out main.go"]
