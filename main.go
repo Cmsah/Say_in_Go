@@ -22,7 +22,7 @@ func init() {
 func main() {
 	server := flag.String("server", "", "http,websocket")
 	flag.Parse()
-
+	log.Println("Main\n")
 	if *server == "http" {
 		fmt.Println("http server is starting on :8080")
 		httpserver.StartHTTPServer()
